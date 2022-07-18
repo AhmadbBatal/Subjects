@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:title="@string/home_fragment_menu"
+        android:icon="@drawable/icon_home_selector"/>
+
+    <item android:id="@+id/categoriesFragment"
+        android:title="@string/Categories_fragment_menu"
+        android:icon="@drawable/icon_categories_selecter"/>
+
+    <item android:id="@+id/settingFragment"
+        android:title="@string/setting_fragment_menu"
+        android:icon="@drawable/icon_setting_selecter"/>
+
+</menu>

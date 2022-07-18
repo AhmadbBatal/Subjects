@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name" translatable="false">موادي</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="all_subjects" translatable="false">subjects</string>
+    <string name="first_year" translatable="false">السنة الاولى</string>
+    <string name="second_year" translatable="false"> السنة الثانية</string>
+    <string name="third_year"  translatable="false">السنة الثالثة</string>
+    <string name="fourth_year" translatable="false">السنة الرابعة</string>
+    <string name="fifth_year"  translatable="false">السنة الخامسة</string>
+
+    <string name="setting_fragment_menu" translatable="false">الإعدادات</string>
+    <string name="Categories_fragment_menu" translatable="false">فئات</string>
+    <string name="home_fragment_menu" translatable="false">الرئيسية</string>
+
+    <string name="todo" translatable="false">TODO</string>
+
+    <string name="no_qualification" translatable="false">لا يوجد مؤهل</string>
+    <string name="has_qualification" translatable="false">يوجد مؤهل</string>
+
+    <string name="advanced_microprocessors_subject" translatable="false">اسس تقانة المعلومات</string>
+    <string name="mohammed_al_muhammed_sub_name" translatable="false">Mohammed Al Muhammed</string>
+    <string name="year_5" translatable="false">5</string>
+
+    <string name="all_subjects_menu" translatable="false">الكل</string>
+    <string name="running_subjects_menu" translatable="false">المواد الحالية</string>
+    <string name="success_subjects_menu" translatable="false">المواد الناجحة</string>
+    <string name="fail_subjects_menu" translatable="false">المواد الراسبة</string>
+    <string name="available_subjects_menu" translatable="false">المواد المتاحة</string>
+
+    <string name="all_subject_dialog" translatable="false">كل المواد</string>
+    <string name="available" translatable="false">المواد المتاحة</string>
+    <string name="running" translatable="false">المواد الحالية</string>
+    <string name="finished" translatable="false">المواد الناجحة</string>
+    <string name="success" translatable="false">المواد الناجحة</string>
+    <string name="fail" translatable="false">المواد الراسبة</string>
+    <string name="closed" translatable="false">المواد الغير متاحة</string>
+
+    <string name="available_chip" translatable="false">متاحة</string>
+    <string name="running_chip" translatable="false">حالية</string>
+    <string name="finished_chip" translatable="false">ناجحة</string>
+    <string name="success_chip" translatable="false">ناجحة</string>
+    <string name="fail_chip" translatable="false">راسبة</string>
+    <string name="closed_chip" translatable="false">غير متاحة</string>
+
+    <string name="choose_chip" translatable="false">حالة المادة</string>
+    <string name="choose_icon" translatable="false">اختر ايقونة للمادة</string>
+
+    <string name="mark" translatable="false">العلامة النهائية</string>
+    <string name="practical_mark" translatable="false">علامة العملي</string>
+    <string name="teacher_name" translatable="false">اسم الدكتور</string>
+    <string name="subjects_statue" translatable="false">Subjects Statue</string>
+    <string name="nothing_to_show" translatable="false">Nothing To Show</string>
+    <string name="edit_subject" translatable="false">Edit Subject</string>
+    <string name="subject_preview" translatable="false">Subject Preview</string>
+    <string name="subject_image" translatable="false">Subject Image :</string>
+    <string name="subject_statue_is" translatable="false">Subject Statue is:</string>
+
+    <string name="practical_mark_with" translatable="false">practical mark :</string>
+    <string name="mark_with" translatable="false">mark :</string>
+
+    <string name="qualification" translatable="false">Qualification</string>
+    <string name="collage_title" translatable="false">الكلية :</string>
+    <string name="hour_title" translatable="false">عدد الساعات :</string>
+    <string name="year_title" translatable="false">السنة :</string>
+    <string name="fifth_year_name" translatable="false">الخامسة</string>
+    <string name="three_hour" translatable="false">3 ساعات</string>
+    <string name="informatics_engineering_department_of_computers" translatable="false">الهندسة المعلوماتية قسم الحاسبات</string>
+    <string name="qualification_title" translatable="false">المؤهل :</string>
+    <string name="teacher_name_" translatable="false">اسم الدكتور :</string>
+    <string name="_100" translatable="false">100</string>
+    <string name="mohmad_almohmad" translatable="false">محمد المحمد</string>
+
+    <string name="Information_technoloj" translatable="false">محمد المحمد</string>
+
+
+
+</resources>

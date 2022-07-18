@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.subjects.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_previewFragment"
+            app:destination="@id/previewFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/settingFragment"-->
+<!--        android:name="com.example.subjects.ui.setting.SettingFragment"-->
+<!--        android:label="fragment_setting"-->
+<!--        tools:layout="@layout/fragment_setting" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_settingFragment_to_categoriesFragment"-->
+<!--            app:destination="@id/categoriesFragment"-->
+<!--            app:popUpToInclusive="true" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.subjects.ui.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.subjects.ui.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.subjects.ui.edit.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="edit_arguments"
+            app:argType="com.example.subjects.data.entities.Subject" />
+        <argument
+            android:name="sendqualification"
+            app:argType="com.example.subjects.data.entities.Qualification" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_editFragment"
+        app:destination="@id/editFragment" />
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.example.subjects.ui.preview.PreviewFragment"
+        android:label="fragment_preview"
+        tools:layout="@layout/fragment_preview" >
+        <argument
+            android:name="preview_args_action_sub"
+            app:argType="com.example.subjects.data.entities.Subject" />
+        <argument
+            android:name="preview_args_action_qualifiaction"
+            app:argType="com.example.subjects.data.entities.Qualification" />
+    </fragment>
+</navigation>

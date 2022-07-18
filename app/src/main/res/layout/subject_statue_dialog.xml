@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_155sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_20sdp"
+    android:backgroundTint="@color/dark_blue_text2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subjects_statue"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_all"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_all"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/all_subject_dialog"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_all_sub_dialog"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/all_sub"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/btn_statue_all"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_all"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_all"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_available"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/available"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_all"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_cirlce"
+            app:layout_constraintStart_toStartOf="@+id/img_all_sub_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/img_all_sub_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_available"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_available"
+            android:contentDescription="@string/todo" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_running"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/running"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_available"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/orange_circle"
+            app:layout_constraintStart_toStartOf="@+id/img_all_sub_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/img_all_sub_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_running"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_running"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_success"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/finished"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_running"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/success_correct"
+            app:layout_constraintStart_toStartOf="@+id/img_all_sub_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/img_all_sub_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_success"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_success"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_failed"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/fail"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_success"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fail_retry"
+            app:layout_constraintStart_toStartOf="@+id/img_all_sub_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/img_all_sub_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_failed"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_failed"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_statue_closed"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/closed"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sliver_text"
+            android:textSize="@dimen/_10ssp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/b_dark_blue"
+            app:elevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statue_failed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/red_cirlce"
+            app:layout_constraintStart_toStartOf="@+id/img_all_sub_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/img_all_sub_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_statue_closed"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_statue_closed"
+            android:contentDescription="@string/todo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

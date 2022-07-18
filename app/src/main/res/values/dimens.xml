@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="material_view_corner">10dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="material_card_fragment_home">14dp</dimen>
+    <dimen name="material_card_round">18dp</dimen>
+    <dimen name="material_card_round2">24dp</dimen>
+    <dimen name="item_home_card_corner">30dp</dimen>
+    <dimen name="item_preview_card_corner">45dp</dimen>
+    <dimen name="item_edit_card_corner">60dp</dimen>
+
+</resources>

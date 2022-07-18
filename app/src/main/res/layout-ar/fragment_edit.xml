@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="10"
+    android:padding="@dimen/_3sdp"
+    tools:context=".ui.edit.EditFragment"
+    android:background="@drawable/trying_svg">
+
+    <androidx.legacy.widget.Space
+        android:id="@+id/spc_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/material_card_background_edit"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_card_background_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/dark_blue_text3"
+        app:cardCornerRadius="@dimen/item_edit_card_corner"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintTop_toBottomOf="@+id/spc_one"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Title_chip_statue">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spc_up_one"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="0.5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/card_back_edit"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_add_edit"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:elevation="5dp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:layout_constraintVertical_weight="2"
+                android:clickable="true"
+                android:foreground="@color/black"
+                app:cardCornerRadius="@dimen/material_card_fragment_home"
+                android:backgroundTint="@color/orange"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spc_up_one"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_check"
+                    android:padding="@dimen/_5sdp"
+                    android:contentDescription="@string/todo" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_back_edit"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:elevation="5dp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:layout_constraintVertical_weight="1.3"
+                app:cardCornerRadius="@dimen/material_card_fragment_home"
+                android:backgroundTint="@color/orange"
+                android:clickable="true"
+                android:foreground="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spc_up_one"
+                app:layout_constraintBottom_toTopOf="@+id/spc_up_fife"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back"
+                    android:padding="@dimen/_5sdp"
+                    android:contentDescription="@string/todo" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spc_up_fife"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/card_back_edit"
+                app:layout_constraintBottom_toTopOf="@+id/txt_subject_edit_name"/>
+
+            <TextView
+                android:id="@+id/txt_subject_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="@string/todo"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/spc_up_two"
+                app:layout_constraintTop_toBottomOf="@+id/spc_up_fife"
+                app:layout_constraintVertical_weight="2.5"
+                tools:layout_editor_absoluteX="94dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spc_up_two"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/txt_subject_edit_name"
+                app:layout_constraintBottom_toTopOf="@+id/edit_teacher_edit_name"/>
+
+            <EditText
+                android:id="@+id/edit_teacher_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/orange"
+                android:autofillHints="اسم الدكتور"
+                android:textColor="@color/sliver_text"
+                android:textColorHint="@color/sliver_text"
+                android:hint="@string/teacher_name"
+                android:inputType="text"
+                tools:ignore="LabelFor"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintVertical_weight="1.5"
+                app:layout_constraintTop_toBottomOf="@+id/spc_up_two"
+                app:layout_constraintBottom_toTopOf="@+id/spc_up_three"/>
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spc_up_three"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/edit_teacher_edit_name"
+                app:layout_constraintBottom_toTopOf="@+id/constraint_hor"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_hor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="1.5"
+                app:layout_constraintTop_toBottomOf="@+id/spc_up_three"
+                app:layout_constraintBottom_toTopOf="@+id/spc_up_four">
+
+                <androidx.legacy.widget.Space
+                    android:id="@+id/spc_in_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/edit_mark_edit"/>
+
+                <EditText
+                    android:id="@+id/edit_mark_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/mark"
+                    app:counterMaxLength="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/sliver_text"
+                    android:textColorHint="@color/sliver_text"
+                    android:backgroundTint="@color/orange"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintHorizontal_weight="1.75"
+                    app:layout_constraintEnd_toStartOf="@+id/spc_in_one"
+                    app:layout_constraintStart_toEndOf="@+id/spc_in_three"
+                    android:importantForAutofill="no" />
+
+                <androidx.legacy.widget.Space
+                    android:id="@+id/spc_in_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/edit_mark_edit"
+                    app:layout_constraintEnd_toStartOf="@+id/edit_practical_mark_edit"/>
+
+                <EditText
+                    android:id="@+id/edit_practical_mark_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/practical_mark"
+                    android:textColor="@color/sliver_text"
+                    android:backgroundTint="@color/orange"
+                    android:textColorHint="@color/sliver_text"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    app:counterMaxLength="2"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintHorizontal_weight="1.75"
+                    app:layout_constraintEnd_toStartOf="@+id/spc_in_two"
+                    app:layout_constraintStart_toEndOf="@+id/spc_in_one"
+                    android:importantForAutofill="no" />
+
+                <androidx.legacy.widget.Space
+                    android:id="@+id/spc_in_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/edit_practical_mark_edit"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spc_up_four"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintVertical_weight="0.2"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_hor"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txt_Title_chip_statue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/choose_chip"
+        android:textColor="@color/sliver_text"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/material_card_background_edit"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_chip"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_chip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintVertical_weight="0.7"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Title_chip_statue"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Title_rec_name">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true"
+            android:scrollbars="horizontal"
+            android:isScrollContainer="true">
+
+            <!--            app:checkedChip="@+id/chip_Available"-->
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_chip"
+                style="@style/CustomChipStyle"
+                android:textColor="@color/b_dark_blue"
+                app:ensureMinTouchTargetSize="true"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_running"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sliver_text"
+                android:text="@string/running_chip"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_success"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sliver_text"
+                android:text="@string/finished_chip"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_fail"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sliver_text"
+                android:text="@string/fail_chip"/>
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_Title_rec_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/choose_icon"
+        android:textColor="@color/sliver_text"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_vertical"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_chip"
+        app:layout_constraintBottom_toTopOf="@+id/rec_img_grid_drawable"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_img_grid_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="3"
+        android:paddingBottom="@dimen/_65sdp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_icons"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Title_rec_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

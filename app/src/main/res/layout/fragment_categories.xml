@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.categories.CategoriesFragment"
+    android:layout_weight="10"
+    android:background="@drawable/trying_svg">
+
+    <androidx.legacy.widget.Space
+        android:id="@+id/spc_first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_category" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1.5"
+        app:layout_constraintTop_toBottomOf="@+id/spc_first"
+        app:layout_constraintBottom_toTopOf="@+id/spc_fourth"
+        app:layout_constraintHorizontal_weight="10">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim_categories"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="7.5"
+            app:lottie_rawRes="@raw/studin_json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spc_sec"/>
+
+        <androidx.legacy.widget.Space
+            android:id="@+id/spc_sec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/anim_categories"
+            app:layout_constraintEnd_toStartOf="@+id/card_student_info"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_student_info"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            app:cardCornerRadius="@dimen/material_card_round2"
+            android:backgroundTint="@color/orange"
+            app:cardMaxElevation="@dimen/_12sdp"
+            app:cardElevation="@dimen/_12sdp"
+            android:foreground="@color/b_dark_blue"
+            android:clickable="true"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spc_third"
+            app:layout_constraintStart_toEndOf="@+id/spc_sec"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@drawable/studint_info"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.legacy.widget.Space
+            android:id="@+id/spc_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="0.4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_student_info" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.legacy.widget.Space
+        android:id="@+id/spc_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_category"
+        app:layout_constraintBottom_toTopOf="@+id/rec_chips"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_chips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rec_subjects_chips"
+        app:layout_constraintTop_toBottomOf="@+id/spc_fourth"
+        app:layout_constraintVertical_weight="0.8"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_subjects_chips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/_70sdp"
+        android:clipToPadding="false"
+        android:elevation="5dp"
+        tools:listitem="@layout/item_home_subjects_list"
+        app:layout_constraintVertical_weight="6.7"
+        app:layout_constraintTop_toBottomOf="@+id/rec_chips"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="RtlSymmetry"/>
+
+<!--    android:paddingStart="@dimen/_13sdp"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
